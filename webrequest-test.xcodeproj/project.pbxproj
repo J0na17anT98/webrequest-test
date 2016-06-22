@@ -13,6 +13,7 @@
 		A31494F81D11CD1C007D34DD /* webrequest_test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A31494F61D11CD1C007D34DD /* webrequest_test.xcdatamodeld */; };
 		A31494FA1D11CD1C007D34DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A31494F91D11CD1C007D34DD /* Assets.xcassets */; };
 		A31494FD1D11CD1C007D34DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A31494FB1D11CD1C007D34DD /* LaunchScreen.storyboard */; };
+		A326E38E1D1B00E400317AFD /* SWPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = A326E38D1D1B00E400317AFD /* SWPerson.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		A31494F91D11CD1C007D34DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A31494FC1D11CD1C007D34DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A31494FE1D11CD1C007D34DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A326E38D1D1B00E400317AFD /* SWPerson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWPerson.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		A31494EE1D11CD1C007D34DD /* webrequest-test */ = {
 			isa = PBXGroup;
 			children = (
+				A326E38C1D1B00D100317AFD /* Model */,
 				A31494EF1D11CD1C007D34DD /* AppDelegate.swift */,
 				A31494F11D11CD1C007D34DD /* ViewController.swift */,
 				A31494F31D11CD1C007D34DD /* Main.storyboard */,
@@ -65,6 +68,14 @@
 				A31494F61D11CD1C007D34DD /* webrequest_test.xcdatamodeld */,
 			);
 			path = "webrequest-test";
+			sourceTree = "<group>";
+		};
+		A326E38C1D1B00D100317AFD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A326E38D1D1B00E400317AFD /* SWPerson.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +152,7 @@
 			files = (
 				A31494F21D11CD1C007D34DD /* ViewController.swift in Sources */,
 				A31494F81D11CD1C007D34DD /* webrequest_test.xcdatamodeld in Sources */,
+				A326E38E1D1B00E400317AFD /* SWPerson.swift in Sources */,
 				A31494F01D11CD1C007D34DD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,6 +305,7 @@
 				A31495031D11CD1C007D34DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

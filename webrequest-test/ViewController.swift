@@ -23,7 +23,20 @@ class ViewController: UIViewController {
                 do {
                     let json = try NSJSONSerialization.JSONObjectWithData(responseData, options: NSJSONReadingOptions.AllowFragments)
                     
-                    print(json)
+                    if let dict = json as? Dictionary<String, AnyObject> {
+                        
+                        if let name = dict["name"] as? String, let height = dict["height"] as? String, let birth = dict["birth_year"] as? String, let hair = dict["hair_color"] as? String {
+                            
+                            let person = SWPerson(name: name, height: height, birthYear: birth, hairColor: hair)
+                            
+                            print(person.name)
+                            print(person.height)
+                            print(person.hairColor)
+                            print(person.birthYear)
+                        }
+                    }
+                    
+                    
                 } catch {
                     print("Could not Serialize")
                 }
