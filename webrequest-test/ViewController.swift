@@ -33,6 +33,12 @@ class ViewController: UIViewController {
                             print(person.height)
                             print(person.hairColor)
                             print(person.birthYear)
+                            
+                            if let films = dict["films"] as? [String] {
+                            for film in films {
+                                print(film)
+                                }
+                            }
                         }
                     }
                     
